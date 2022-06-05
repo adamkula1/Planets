@@ -29,11 +29,42 @@ nav a {
     text-transform: uppercase;
 }
 
-nav a:active,
-nav a:hover {
+nav .mercury a:active,
+nav .mercury a:hover {
     border-top: 4px solid $blue-sky;
 }
 
-.isActive {
-    border-top: 4px solid $blue-sky;
+nav .venus a:active,
+nav .venus a:hover {
+    border-top: 4px solid $yellow;
+}
+
+nav .earth a:active,
+nav .earth a:hover {
+    border-top: 4px solid $purple;
+}
+
+nav .mars a:active,
+nav .mars a:hover {
+    border-top: 4px solid $red-light;
+}
+
+nav .jupiter a:active,
+nav .jupiter a:hover {
+    border-top: 4px solid $red;
+}
+
+nav .saturn a:active,
+nav .saturn a:hover {
+    border-top: 4px solid $orange;
+}
+
+nav .uranus a:active,
+nav .uranus a:hover {
+    border-top: 4px solid $green;
+}
+
+nav .neptun a:active,
+nav .neptun a:hover {
+    border-top: 4px solid $blue;
 }

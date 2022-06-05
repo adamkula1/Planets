@@ -12,14 +12,14 @@ const Navbar: React.FC<LayoutProps> = ({children}) => {
 
         <nav>
             <ul>
-                <li><Link href="/">Mercury</Link></li>
-                <li><Link href="/Venus">Venus</Link></li>
-                <li><Link href="/Earth">Earth</Link></li>
-                <li><Link href="/Mars">Mars</Link></li>
-                <li><Link href="/Jupiter">Jupiter</Link></li>
-                <li><Link href="/Saturn">Saturn</Link></li>
-                <li><Link href="/Uranus">Uranus</Link></li>
-                <li><Link href="/Neptun">Neptun</Link></li>
+                <li className="mercury"><Link href="/">Mercury</Link></li>
+                <li className="venus"><Link href="/Venus">Venus</Link></li>
+                <li className="earth"><Link href="/Earth">Earth</Link></li>
+                <li className="mars"><Link href="/Mars">Mars</Link></li>
+                <li className="jupiter"><Link href="/Jupiter">Jupiter</Link></li>
+                <li className="saturn"><Link href="/Saturn">Saturn</Link></li>
+                <li className="uranus"><Link href="/Uranus">Uranus</Link></li>
+                <li className="neptun"><Link href="/Neptun">Neptun</Link></li>
             </ul>
         </nav>
     </header>

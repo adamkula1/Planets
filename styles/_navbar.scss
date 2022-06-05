@@ -1,0 +1,39 @@
+.logo {
+    font-size: $font-size-logo;
+    font-family: $font-family-Antonio;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    color: $white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: 1px solid #979797;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    font-size: $font-size-body;
+    font-family: $font-family-Spartan;
+    font-weight: $font-weight-medium;
+    letter-spacing: $letter-spacing-h4;
+    padding-top: 2.283rem;
+    margin: 0 1rem;
+    text-transform: uppercase;
+}
+
+nav a:active,
+nav a:hover {
+    border-top: 4px solid $blue-sky;
+}
+
+.isActive {
+    border-top: 4px solid $blue-sky;
+}

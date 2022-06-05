@@ -1,5 +1,8 @@
 //-----------VARIABLES-------------
 
+//Background
+$background-body: url("/assets/background-stars.svg");
+
 //Width
 $width-content: 1110px;
 $width-box-basic: 350px;
@@ -7,15 +10,18 @@ $width-box-value: 255px;
 $width-image: 290px;
 
 //Font-family
-$font-family-Spartan: 'League Spartan', sans-serif;
-$font-family-Antonio: 'Antonio', sans-serif;
+$font-family-Spartan: "League Spartan", sans-serif;
+$font-family-Antonio: "Antonio", sans-serif;
 
 //Font-size
 $font-size-h1: 80px;
 $font-size-h2: 40px;
 $font-size-h3: 12px;
 $font-size-h4: 11px;
+
+$font-size-logo: 28px;
 $font-size-body: 14px;
+// $font-size-nav: 16px;
 
 //Font-weight
 $font-weight-medium: 500;
@@ -28,19 +34,15 @@ $letter-spacing-h4: 1px;
 $letter-spacing-h3: 2.6px;
 
 //Colors
-$white: #FFFFFF;
-$dark: #070724;
-$dark-light: #38384F;
+$white: #ffffff;
+$color-background: #070724;
+$dark: #38384f;
 $gray: #838391;
-$blue-sky: #419EBB;
-$yellow: #EDA249;
-$purple: #6D2ED5;
-$red-light: #D14C32;
-$red: #D83A34;
-$orange: #CD5120;
-$green: #1EC1A2;
-$blue: #2D68F0;
-
-
-
-
+$blue-sky: #419ebb;
+$yellow: #eda249;
+$purple: #6d2ed5;
+$red-light: #d14c32;
+$red: #d83a34;
+$orange: #cd5120;
+$green: #1ec1a2;
+$blue: #2d68f0;

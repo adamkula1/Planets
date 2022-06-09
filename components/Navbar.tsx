@@ -1,10 +1,8 @@
 import Link from "next/link";
 
-type LayoutProps = {
-    children: React.ReactNode;
- }
 
-const Navbar: React.FC<LayoutProps> = ({children}) => {
+
+const Navbar= () => {
 
   return (
     <header>
@@ -13,7 +11,7 @@ const Navbar: React.FC<LayoutProps> = ({children}) => {
         <nav>
             <ul>
                 <li className="mercury"><Link href="/">Mercury</Link></li>
-                <li className="venus"><Link href="/Venus">Venus</Link></li>
+                <li className="venus"><Link href="/venus">Venus</Link></li>
                 <li className="earth"><Link href="/Earth">Earth</Link></li>
                 <li className="mars"><Link href="/Mars">Mars</Link></li>
                 <li className="jupiter"><Link href="/Jupiter">Jupiter</Link></li>

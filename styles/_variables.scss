@@ -5,7 +5,7 @@ $background-body: url("/assets/background-stars.svg");
 
 //Width
 $width-content: 1110px;
-$width-box-basic: 350px;
+$width-box-article: 350px;
 $width-box-value: 255px;
 $width-image: 290px;
 
@@ -21,12 +21,18 @@ $font-size-h4: 11px;
 
 $font-size-logo: 28px;
 $font-size-body: 14px;
-// $font-size-nav: 16px;
+$font-size-content: 17px;
+$font-size-basic: 16px;
 
 //Font-weight
-$font-weight-medium: 500;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
 $font-weight-regular: 400;
-$font-weight-bold: bold;
+$font-weight-medium: 500;
+$font-weight-semiBold: 600;
+$font-weight-bold: 700;
+$font-weight-extraBold: 800;
+$font-weight-black: 900;
 
 //letter-spacing
 $letter-spacing-h2: -1.5px;
@@ -46,3 +52,4 @@ $red: #d83a34;
 $orange: #cd5120;
 $green: #1ec1a2;
 $blue: #2d68f0;
+$box: #ffffff5c;

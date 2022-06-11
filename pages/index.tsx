@@ -2,10 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from "next/link";
-import Mercury from '../public/assets/planet-mercury.svg'
-import Source from '../public/assets/icon-source.svg'
-
-import data from '../data/data.json'
+import Sourceicon from '../public/assets/icon-source.svg'
+import Data from '../data/data.json'
+import { useState } from 'react';
 
 type Planets = {
   name: string;
@@ -35,6 +34,12 @@ type Planets = {
 
 const Home: NextPage = () => {
 
+  //Data from the JSON file is stored here
+  const [Mercury] = useState<any>(Data.Mercury);
+  const [value, setValue] = useState<number>(0);
+
+  const { name, overview, content, source, structure, geology, rotation, revolution, radius, temperature, images, planet, internal } = Mercury[value];
+
   return (
     <>
       <Head>
@@ -45,14 +50,14 @@ const Home: NextPage = () => {
 
       <main>
         <section className='container'>
-          <div className='planet-img'><Image src={Mercury} alt="mercury" width={320} height={320}/></div>
+          <div className='planet-img'><Image src={images.planet} alt={name} width={320} height={320}/></div>
           <article>
-            <h1 className='title'>Mercury</h1>
-            <p className='text'>Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun&apos;s planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.</p>
+            <h1 className='title'>{name}</h1>
+            <p className='text'>{overview.content}</p>
             <p className='source'>Source:
-              <Link href="https://en.wikipedia.org/wiki/Mercury_(planet)">
+              <Link href={overview.source}>
                 <a target="_blank">Wikipedia</a></Link>
-              <Image src={Source} alt="source" />
+              <Image src={Sourceicon} alt="source" />
             </p>
 
             <div className='wrap-buttons'>
@@ -67,28 +72,28 @@ const Home: NextPage = () => {
           <div className='data-box'>
             <div className='box'>
               <h4>Rotation time</h4>
-              <h2>58.6 Days</h2>
+              <h2>{rotation}</h2>
             </div>
           </div>
 
           <div className='data-box'>
             <div className='box'>
               <h4>Revolution time</h4>
-              <h2>87.97 days</h2>
+              <h2>{revolution}</h2>
             </div>
           </div>
 
           <div className='data-box'>
             <div className='box'>
               <h4>Radius</h4>
-              <h2>2,439.7 km</h2>
+              <h2>{radius}</h2>
             </div>
           </div>
 
           <div className='data-box'>
             <div className='box'>
               <h4>Avarage temp.</h4>
-              <h2>430°c</h2>
+              <h2>{temperature}</h2>
             </div>
           </div>
         </section>

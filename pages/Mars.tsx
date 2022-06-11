@@ -7,7 +7,7 @@ import Data from '../data/data.json'
 import { useState } from 'react';
 
 
-const Mars = () => {
+const Mars: React.FC = () => {
 
 //Data from the JSON file is stored here
   const [Mars] = useState<any>(Data.Mars);

@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://planets.netlify.app/)
+- Live Site URL: [Add live site URL here](https://planet-next.netlify.app/)
 
 ### Built with
 

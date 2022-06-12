@@ -60,18 +60,22 @@ const Saturn: React.FC = () => {
           }
         </div>
         <article>
-          <h1 className='title'>{name}</h1>
-          <p className='text'>{index.content}</p>
-          <p className='source'>Source:
-            <Link href={index.source}>
-              <a target="_blank">Wikipedia</a></Link>
-            <Image src={Sourceicon} alt="source" />
-          </p>
+          <div className='box-one'>
+            <h1 className='title'>{name}</h1>
+            <p className='text'>{index.content}</p>
+            <p className='source'>Source:
+              <Link href={index.source}>
+                <a target="_blank">Wikipedia</a></Link>
+              <Image src={Sourceicon} alt="source" />
+            </p>
+          </div>
 
-          <div className='wrap-buttons'>
-            <button onClick={handleClick} data-value="overview" className={`overview-box overview ${index == overview ? "saturn-active" : ""}`}><span className='overview-number'>01</span>Overview</button>
-            <button onClick={handleClick} data-value="structure" className={`overview-box structure ${index == structure ? "saturn-active" : ""}`}><span className='overview-number'>02</span>Internal structure</button>
-            <button onClick={handleClick} data-value="geology" className={`overview-box geology ${index == geology ? "saturn-active" : ""}`}><span className='overview-number'>03</span>Surface geology</button>
+          <div className='box-two'>
+            <div className='wrap-buttons'>
+              <button onClick={handleClick} data-value="overview" className={`overview-box overview ${index == overview ? "saturn-active" : ""}`}><span className='overview-number'>01</span>Overview</button>
+              <button onClick={handleClick} data-value="structure" className={`overview-box structure ${index == structure ? "saturn-active" : ""}`}><span className='overview-number'>02</span>Internal structure</button>
+              <button onClick={handleClick} data-value="geology" className={`overview-box geology ${index == geology ? "saturn-active" : ""}`}><span className='overview-number'>03</span>Surface geology</button>
+            </div>
           </div>
         </article>
       </section>

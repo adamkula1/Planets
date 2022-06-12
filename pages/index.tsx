@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from "next/link";
 import Sourceicon from '../public/assets/icon-source.svg'
 import Data from '../data/data.json'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 const Home: NextPage = () => {
@@ -19,10 +19,12 @@ const Home: NextPage = () => {
   const [contents, setContents] = useState<string>("overview");
   const [imagePlanet, setImagePlanet] = useState<boolean>(true);
   const [imageInternal, setImageInternal] = useState<boolean>();
+
   
   const handleClick = (e: any) => {
     setContents(e.currentTarget.getAttribute('data-value'));
     changeContent();
+
   }
 
   const changeContent = () => {
@@ -44,6 +46,7 @@ const Home: NextPage = () => {
       setImageInternal(false);
     }
   }
+
 
   return (
     <>
@@ -75,9 +78,9 @@ const Home: NextPage = () => {
             </p>
 
             <div className='wrap-buttons'>
-              <button onClick={handleClick} data-value="overview" className='overview'><span className='overview-number'>01</span>Overview</button>
-              <button onClick={handleClick} data-value="structure" className='overview'><span className='overview-number'>02</span>Internal structure</button>
-              <button onClick={handleClick} data-value="geology" className='overview'><span className='overview-number'>03</span>Surface geology</button>
+              <button onClick={handleClick} data-value="overview" className={`overview-box overview ${index == overview ? "mercury-active" : ""}`}><span className='overview-number'>01</span>Overview</button>
+              <button onClick={handleClick} data-value="structure" className={`overview-box structure ${index == structure ? "mercury-active" : ""}`}><span className='overview-number'>02</span>Internal structure</button>
+              <button onClick={handleClick} data-value="geology" className={`overview-box geology ${index == geology ? "mercury-active" : ""}`}><span className='overview-number'>03</span>Surface geology</button>
             </div>
           </article>
         </section>

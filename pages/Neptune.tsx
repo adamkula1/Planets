@@ -7,13 +7,13 @@ import Data from '../data/data.json'
 import { useState } from 'react';
 
 
-const Neptun: React.FC = () => {
+const Neptune: React.FC = () => {
 
     //Data from the JSON file is stored here
-  const [Neptun] = useState<any>(Data.Neptune);
+  const [Neptune] = useState<any>(Data.Neptune);
   const [value, setValue] = useState<number>(0);
 
-  const { name, overview, content, source, structure, geology, rotation, revolution, radius, temperature, images, planet, internal } = Neptun[value];
+  const { name, overview, content, source, structure, geology, rotation, revolution, radius, temperature, images, planet, internal } = Neptune[value];
   
   const [index, setIndex] = useState<any>(overview);
   const [contents, setContents] = useState<string>("overview");
@@ -44,6 +44,7 @@ const Neptun: React.FC = () => {
       setImageInternal(false);
     }
   }
+  
 
   return (
     <>
@@ -69,9 +70,9 @@ const Neptun: React.FC = () => {
           </p>
 
           <div className='wrap-buttons'>
-            <button onClick={handleClick} data-value="overview" className='overview'><span className='overview-number'>01</span>Overview</button>
-            <button onClick={handleClick} data-value="structure" className='overview'><span className='overview-number'>02</span>Internal structure</button>
-            <button onClick={handleClick} data-value="geology" className='overview'><span className='overview-number'>03</span>Surface geology</button>
+            <button onClick={handleClick} data-value="overview" className={`overview-box overview ${index == overview ? "neptune-active" : ""}`}><span className='overview-number'>01</span>Overview</button>
+            <button onClick={handleClick} data-value="structure" className={`overview-box structure ${index == structure ? "neptune-active" : ""}`}><span className='overview-number'>02</span>Internal structure</button>
+            <button onClick={handleClick} data-value="geology" className={`overview-box geology ${index == geology ? "neptune-active" : ""}`}><span className='overview-number'>03</span>Surface geology</button>
           </div>
         </article>
       </section>
@@ -110,4 +111,4 @@ const Neptun: React.FC = () => {
   )
 }
 
-export default Neptun
+export default Neptune

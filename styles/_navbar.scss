@@ -34,8 +34,16 @@ nav .mercury a:hover {
     border-top: 4px solid $blue-sky;
 }
 
+.mercury a {
+    border-top: 4px solid $blue-sky;
+}
+
 nav .venus a:active,
 nav .venus a:hover {
+    border-top: 4px solid $yellow;
+}
+
+.venus a {
     border-top: 4px solid $yellow;
 }
 
@@ -44,8 +52,16 @@ nav .earth a:hover {
     border-top: 4px solid $purple;
 }
 
+.earth a {
+    border-top: 4px solid $purple;
+}
+
 nav .mars a:active,
 nav .mars a:hover {
+    border-top: 4px solid $red-light;
+}
+
+.mars a {
     border-top: 4px solid $red-light;
 }
 
@@ -54,8 +70,16 @@ nav .jupiter a:hover {
     border-top: 4px solid $red;
 }
 
+.jupiter a {
+    border-top: 4px solid $red;
+}
+
 nav .saturn a:active,
 nav .saturn a:hover {
+    border-top: 4px solid $orange;
+}
+
+.saturn a {
     border-top: 4px solid $orange;
 }
 
@@ -64,7 +88,15 @@ nav .uranus a:hover {
     border-top: 4px solid $green;
 }
 
-nav .neptun a:active,
-nav .neptun a:hover {
+.uranus a {
+    border-top: 4px solid $green;
+}
+
+nav .neptune a:active,
+nav .neptune a:hover {
+    border-top: 4px solid $blue;
+}
+
+.neptune a {
     border-top: 4px solid $blue;
 }

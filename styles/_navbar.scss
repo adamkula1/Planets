@@ -1,0 +1,195 @@
+.logo {
+  font-size: $font-size-logo;
+  font-family: $font-family-Antonio;
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  color: $white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom: 1px solid #979797;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  font-size: $font-size-body;
+  font-family: $font-family-Spartan;
+  font-weight: $font-weight-medium;
+  letter-spacing: $letter-spacing-h4;
+  padding-top: 2.283rem;
+  margin: 0 1rem;
+  text-transform: uppercase;
+}
+
+nav .mercury a:active,
+nav .mercury a:hover {
+  border-top: 4px solid $blue-sky;
+}
+
+.mercury a {
+  border-top: 4px solid $blue-sky;
+}
+
+nav .venus a:active,
+nav .venus a:hover {
+  border-top: 4px solid $yellow;
+}
+
+.venus a {
+  border-top: 4px solid $yellow;
+}
+
+nav .earth a:active,
+nav .earth a:hover {
+  border-top: 4px solid $purple;
+}
+
+.earth a {
+  border-top: 4px solid $purple;
+}
+
+nav .mars a:active,
+nav .mars a:hover {
+  border-top: 4px solid $red-light;
+}
+
+.mars a {
+  border-top: 4px solid $red-light;
+}
+
+nav .jupiter a:active,
+nav .jupiter a:hover {
+  border-top: 4px solid $red;
+}
+
+.jupiter a {
+  border-top: 4px solid $red;
+}
+
+nav .saturn a:active,
+nav .saturn a:hover {
+  border-top: 4px solid $orange;
+}
+
+.saturn a {
+  border-top: 4px solid $orange;
+}
+
+nav .uranus a:active,
+nav .uranus a:hover {
+  border-top: 4px solid $green;
+}
+
+.uranus a {
+  border-top: 4px solid $green;
+}
+
+nav .neptune a:active,
+nav .neptune a:hover {
+  border-top: 4px solid $blue;
+}
+
+.neptune a {
+  border-top: 4px solid $blue;
+}
+
+.menu-icon {
+    display: none;
+    margin-right: 2rem;
+    z-index: 1;
+    border: none;
+    background: none;
+    color: #fafafa;
+}
+
+.navOpen {
+    width: 60%;
+    display: inherit;
+    display: flex;
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 5rem;
+    z-index: 1;
+    background-color: #070724;
+}
+
+.navOpen li {
+    width: -webkit-fill-available;
+    padding: 1rem 0;
+    border-bottom: 1px solid $box;
+    background-image: url(../public/assets/icon-chevron.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 50%;
+}
+
+
+@media only screen and (max-width: 670px) {
+    header {
+        flex-direction: row!important;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inherit;
+        margin: auto;
+    }
+
+    nav a {
+        padding-bottom: 0.1rem!important;
+      }
+
+      .dot {
+        width: 10px!important;
+        height: 10px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    
+    .dot-Mercury {
+        background-color: $blue-sky; 
+    }
+    
+    .dot-Venusa {
+        background-color: $yellow;
+    }
+    
+    .dot-Earth {
+        background-color: $purple;
+    }
+    
+    .dot-Mars {
+        background-color: $red-light;
+    }
+    
+    .dot-Jupiter {
+        background-color: $red;
+    }
+    
+    .dot-Saturn {
+        background-color: $orange;
+    }
+    
+    .dot-Uranus {
+        background-color: $green;
+    }
+    
+    .dot-Neptune {
+        background-color: $blue;
+    }
+}

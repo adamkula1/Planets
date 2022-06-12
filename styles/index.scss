@@ -1,0 +1,161 @@
+main {
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 0.8rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.planet-img {
+    margin-left: 5rem;
+}
+
+.box-one,
+.box-two {
+    max-width: $width-box-article;
+}
+
+.title {
+    font-family: $font-family-Antonio;
+    font-size: $font-size-h1;
+    font-weight: $font-weight-medium;
+    color: $white;
+    margin-bottom: 2rem;
+}
+
+.text {
+    font-family: $font-family-Spartan;
+    font-size: $font-size-content;
+    font-weight: $font-weight-regular;
+    color: $white;
+    line-height: 25px;
+}
+
+.source {
+    font-family: $font-family-Spartan;
+    font-size: $font-size-content;
+    font-weight: $font-weight-light;
+    color: #d5d5d5;
+    margin: 1.85rem 0;
+
+    > a {
+        font-family: $font-family-Spartan;
+        font-size: $font-size-content;
+        font-weight: $font-weight-bold;
+        color: $white;
+        border-bottom: 1px solid #ccc;
+        margin: 0 0.65rem;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+}
+
+.wrap-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.overview-box {
+    height: 50px;
+    text-align: left;
+    background: none;
+    font-family: $font-family-Spartan;
+    font-size: $font-size-content;
+    font-weight: $font-weight-regular;
+    color: $white;
+    letter-spacing: $letter-spacing-h3;
+    border: 0.5px solid $box;
+    text-transform: uppercase;
+
+    > .overview-number {
+        font-weight: $font-weight-light;
+        margin: 0 1.5rem;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data-box {
+    width: 255px;
+    height: 128px;
+    border: 0.5px solid $box;
+}
+
+.box {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+h4 {
+    font-family: $font-family-Spartan;
+    font-size: $font-size-body;
+    font-weight: $font-weight-medium;
+    letter-spacing: $letter-spacing-h4;
+    text-transform: uppercase;
+    margin: 0;
+    color: #ededed;
+}
+
+h2 {
+    font-family: $font-family-Antonio;
+    font-size: $font-size-h2;
+    font-weight: $font-weight-medium;
+    letter-spacing: $letter-spacing-h2;
+    text-transform: uppercase;
+    margin-top: 0.8rem;
+}
+
+.geology-img {
+    float: right;
+    position: relative;
+    left: -15rem;
+    top: 15.5rem;
+}
+
+.overview-box:hover,
+.overview-box:focus {
+    background: $color-active;
+}
+
+.mercury-active {
+    background-color: $blue-sky!important;
+}
+
+.venus-active {
+    background-color: $yellow!important;
+}
+
+.earth-active {
+    background-color: $purple!important;
+}
+
+.mars-active {
+    background-color: $red-light!important;
+}
+
+.jupiter-active {
+    background-color: $red!important;
+}
+
+.saturn-active {
+    background-color: $orange!important;
+}
+
+.uranus-active {
+    background-color: $green!important;
+}
+
+.neptune-active {
+    background-color: $blue!important;
+}

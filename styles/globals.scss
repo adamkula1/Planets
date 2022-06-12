@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@import "./variables";
+@import "./mixins";
+@import "./navbar";
+@import "./index.scss";
+
 html,
 body {
   padding: 0;
   margin: 0;
+  background-color: $color-background;
+  background-image: $background-body;
+  color: $white;
 }
 
 a {
@@ -15,3 +23,271 @@ a {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 0 2.5rem;
+  }
+
+  .content {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1012px) {
+  .planet-img {
+    margin-left: 0rem;
+  }
+
+  .box {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  header {
+    flex-direction: column;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  article {
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .planet-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .box {
+    margin-left: 1rem;
+    text-align: unset;
+    margin-top: 1.2rem;
+  }
+
+  .box h2 {
+    font-size: 24px;
+  }
+
+  .box h4 {
+    font-size: 8px;
+  }
+
+  .data-box {
+    max-width: 164px;
+    height: 88px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .overview-box {
+    font-size: 14px;
+  }
+
+  .box-two {
+    width: 300px;
+  }
+
+  .source {
+    font-size: 14px;
+  }
+
+  .source > a {
+    font-size: 14px;
+  }
+
+  .geology-img {
+    width: 100px;
+    float: right;
+    position: relative;
+    bottom: 75px;
+    left: unset;
+    top: unset;
+}
+
+  nav a {
+    padding-top: 0;
+    padding-bottom: 0.785rem;
+  }
+
+  nav .mercury a:active,
+  nav .mercury a:hover {
+      border-bottom: 4px solid $blue-sky;
+      border-top: unset;
+  }
+
+  .mercury a {
+      border-bottom: 4px solid $blue-sky;
+      border-top: unset;
+  }
+
+  nav .venus a:active,
+  nav .venus a:hover {
+      border-bottom: 4px solid $yellow;
+      border-top: unset;
+  }
+
+  .venus a {
+      border-bottom: 4px solid $yellow;
+      border-top: unset;
+  }
+
+  nav .earth a:active,
+  nav .earth a:hover {
+      border-bottom: 4px solid $purple;
+      border-top: unset;
+  }
+
+  .earth a {
+      border-bottom: 4px solid $purple;
+      border-top: unset;
+  }
+
+  nav .mars a:active,
+  nav .mars a:hover {
+      border-bottom: 4px solid $red-light;
+      border-top: unset;
+  }
+
+  .mars a {
+      border-bottom: 4px solid $red-light;
+      border-top: unset;
+  }
+
+  nav .jupiter a:active,
+  nav .jupiter a:hover {
+      border-bottom: 4px solid $red;
+      border-top: unset;
+  }
+
+  .jupiter a {
+      border-bottom: 4px solid $red;
+      border-top: unset;
+  }
+
+  nav .saturn a:active,
+  nav .saturn a:hover {
+      border-bottom: 4px solid $orange;
+      border-top: unset;
+  }
+
+  .saturn a {
+      border-bottom: 4px solid $orange;
+      border-top: unset;
+  }
+
+  nav .uranus a:active,
+  nav .uranus a:hover {
+      border-bottom: 4px solid $green;
+      border-top: unset;
+  }
+
+  .uranus a {
+      border-bottom: 4px solid $green;
+      border-top: unset;
+  }
+
+  nav .neptune a:active,
+  nav .neptune a:hover {
+      border-bottom: 4px solid $blue;
+      border-top: unset;
+  }
+
+  .neptune a {
+      border-bottom: 4px solid $blue;
+      border-top: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overview-box > .overview-number {
+    margin: 0 0.5rem;
+  }
+
+  .box-two {
+    width: 250px;
+}
+}
+
+@media screen and (max-width: 725px) {
+  article {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .box-one {
+    max-width: 100%;
+  }
+
+  .box-two {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .container {
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+
+}
+
+@media screen and (max-width: 590px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .data-box {
+    max-width: 100%;
+    width: 100%;
+    height: unset;
+  }
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .box h2 {
+    margin: 0;
+  }
+
+  .box h4 {
+    font-size: 14px;
+  }
+
+  .container {
+    margin-bottom: 3rem;
+  }
+}

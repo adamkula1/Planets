@@ -1,5 +1,3 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from "next/link";
 import Sourceicon from '../public/assets/icon-source.svg'
@@ -10,7 +8,7 @@ const Earth: React.FC = () => {
 
 //Data from the JSON file is stored here
   const [Earth] = useState<any>(Data.Earth);
-  const [value, setValue] = useState<number>(0);
+  const [value] = useState<number>(0);
 
   const { name, overview, content, source, structure, geology, rotation, revolution, radius, temperature, images, planet, internal } = Earth[value];
   

@@ -68,9 +68,9 @@ const Earth: React.FC = () => {
         </p>
 
         <div className='wrap-buttons'>
-          <button onClick={handleClick} data-value="overview" className='overview'><span className='overview-number'>01</span>Overview</button>
-          <button onClick={handleClick} data-value="structure" className='overview'><span className='overview-number'>02</span>Internal structure</button>
-          <button onClick={handleClick} data-value="geology" className='overview'><span className='overview-number'>03</span>Surface geology</button>
+          <button onClick={handleClick} data-value="overview" className={`overview-box overview ${index == overview ? "earth-active" : ""}`}><span className='overview-number'>01</span>Overview</button>
+          <button onClick={handleClick} data-value="structure" className={`overview-box structure ${index == structure ? "earth-active" : ""}`}><span className='overview-number'>02</span>Internal structure</button>
+          <button onClick={handleClick} data-value="geology" className={`overview-box geology ${index == geology ? "earth-active" : ""}`}><span className='overview-number'>03</span>Surface geology</button>
         </div>
       </article>
     </section>

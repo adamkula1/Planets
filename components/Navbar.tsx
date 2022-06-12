@@ -1,13 +1,9 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-// import MenuIcon from '@mui/icons-material/Menu';
-// import ClearIcon from '@mui/icons-material/Clear';
 import Image from 'next/image'
-
 import MenuIcon from "../public/assets/icon-hamburger.svg";
 import ClearIcon from "../public/assets/icons-close.svg";
-import ChevronIcon from "../public/assets/icons-chevron.svg";
 
 
 

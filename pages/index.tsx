@@ -4,14 +4,14 @@ import Image from 'next/image'
 import Link from "next/link";
 import Sourceicon from '../public/assets/icon-source.svg'
 import Data from '../data/data.json'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 const Home: NextPage = () => {
 
   //Data from the JSON file is stored here
   const [Mercury] = useState<any>(Data.Mercury);
-  const [value, setValue] = useState<number>(0);
+  const [value] = useState<number>(0);
 
   const { name, overview, content, source, structure, geology, rotation, revolution, radius, temperature, images, planet, internal } = Mercury[value];
 
